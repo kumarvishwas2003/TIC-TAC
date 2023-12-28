@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-toe</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Play:wght@700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <embed
+      name="back-music"
+      src="./music/back-music.mp3"
+      loop="false"
+      hidden="true"
+      autostart="true"
+    />
+    <div class="wrapper">
+      <div class="head">
+        <h1 class="glow">Tick-Tack-Toe</h1>
+      </div>
+      <div class="player-div">
+        <div class="player1">
+          <span class="cross">❌</span>
+          <span>Player 1</span>
+        </div>
+        <div class="player2">
+          <span class="circle">⭕</span>
+          <span>Player 2</span>
+        </div>
+      </div>
+      <!--player-->
+      <div class="game-div">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+      <!--game-div-->
+      <div class="reset">
+        <button class="reset-game">Reset Game</button>
+      </div>
+    </div>
+    <!--wrapper-->
+    <div class="winner1 hidden">
+      <p>Player 1 WON!!</p> 
+    </div>
+    <div class="winner2 hidden">
+      <p>Player 2 WON!!</p> 
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
